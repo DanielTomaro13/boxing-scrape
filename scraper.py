@@ -63,7 +63,7 @@ def clean_filename(name):
     return name.replace(" ", "_").replace(".", "").replace(",", "")
 
 # Load fighters list
-fighters_df = pd.read_csv("fighters_to_scrape.csv")
+fighters_df = pd.read_csv("/Users/danieltomaro/Documents/Projects/boxing-scrape/data/fighters_to_scrape.csv")
 
 # Create or load bios output file
 bios = []

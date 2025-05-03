@@ -4,8 +4,8 @@ import glob
 
 # Load bios if available
 bio_data = {}
-if os.path.exists("fighter_bios.csv"):
-    bios_df = pd.read_csv("fighter_bios.csv")
+if os.path.exists("/Users/danieltomaro/Documents/Projects/boxing-scrape/data/fighter_bios.csv"):
+    bios_df = pd.read_csv("/Users/danieltomaro/Documents/Projects/boxing-scrape/data/fighter_bios.csv")
     bios_df.columns = [col.strip() for col in bios_df.columns]
     for _, row in bios_df.iterrows():
         bio_data[row["Name"]] = {
